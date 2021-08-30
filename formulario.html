@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/bootstrap-4.6.0-dist/bootstrap-4.6.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script type="text/javascript" src="./assets/jquery/jquery-3.6.0.min.js"></script>
+    <script src="assets/javascript/formulario.js"></script>
+    <title>Formulário</title>
+
+</head>
+
+<body>
+    <header>
+        <!-- Primeiro menu----------------------------------------------------------- -->
+
+        <section class="d-flex justify-content-between" id="primeiro_menu">
+            <h6>Frete Grátis | </h6>
+            <h6>12x Sem Juros | </h6>
+            <h6>Certificado de Garantia Ouro 18K</h6>
+        </section>
+
+
+        <!-- Segundo menu----------------------------------------------------------- -->
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
+                aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse d-flex justify-content-around" id="conteudoNavbarSuportado">
+
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home<span class="sr-only">(página atual)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="galeria.html">Galeria <span class="sr-only"></a>
+                    </li></span>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="produtos.html#colares">Colares</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Coleções
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="opcao_menu">
+                            <a class="dropdown-item" href="#">Sombra e Sol</a>
+                            <a class="dropdown-item" href="#">Namorados</a>
+                            <a class="dropdown-item" href="#">Lucky Star</a>
+                            <a class="dropdown-item" href="#">Luar</a>
+
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="produtos.html#aliancas">Alianças<span class="sr-only"></a></span>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="produtos.html#brincos">Brincos<span class="sr-only"></a></span>
+                    </li>
+                    <li>
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+                        <button class="btn btn-outline-primary my-2 my-sm-0" type="submit"><i
+                            class="bi bi-search"></i></button>
+                    </form>
+                </li>
+                    <li>
+                        <a class="navbar-brand" href="index.html"><img src="imagens/logo2.PNG" alt="logo"
+                                class="img-fluid ml-5 d-flex justify-content-center" id="logo">
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class ="nav-link" href="formulario.html"><img src="imagens/user.png" alt="Login" class="img-fluid" id="user">Cadastre-se</a>
+                      </li>
+                </ul>
+
+            </div>
+
+        </nav>
+    </header>
+
+    <main>
+        <section class="container col-8 mt-5" style="box-shadow: 0px 0px 3px 0px; border-radius: 10px; height: 80vh; background-color: rgb(250, 246, 241);">
+            <h1 class="d-flex justify-content-center md-mb-3">Faça seu Cadastro</h1>
+    
+            <form class="needs-validation" novalidate>
+                <section class="form-row mb-3" class="col-9">
+                    <div class="input-group" class="col-9">
+                        
+                        <div class="input-group-prepend">
+                            <label class="input-group-text">Primeiro Nome:</label>
+                        </div>
+    
+                        <input  type="text" class="form-control" placeholder="Digite o Primeiro Nome."
+                        aria-describedby="inputGroupPrepend" required  id="nome" minlength="3">
+                 
+                        <div class="input-group-prepend">
+                            <span class="input-group-text ml-3">Ultimo Nome:</span>
+                        </div>
+    
+                        <input type="text" class="form-control" placeholder="Digite o Último Nome."
+                            aria-describedby="inputGroupPrepend" required>
+               
+                    </div>
+                </section>
+    
+                <section class="form-row mb-3 mt-4">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">E-mail:</span>
+                        </div>
+                        <input type="email" class="form-control" placeholder="Digite um E-mail Válido."
+                            aria-describedby="inputGroupPrepend" required onblur="validaEmail(this)">
+                    </div>
+                </section>
+    
+                <section class="form-row mb-3 mt-4">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+
+                            <span class="input-group-text">Telfone:</span>
+                            <input type="number" class="form-control" placeholder="Digite o Telfone."
+                                aria-describedby="inputGroupPrepend" required max="99999999999" min="999999999" id="telefone">
+                        </div>
+                        <div class="input-group-prepend">
+                            <span class="input-group-text ml-3">Endereço:</span>
+                        </div>
+                        <input type="text" for="validationCustom05" class="form-control" id="validationCustom05"
+                            placeholder="Digite o Endereço." aria-describedby="inputGroupPrepend" required>
+                    
+                    </div>
+                </section>
+    
+                <section class="form-row mb-3 mt-4">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <label for="senha"></label>
+                            <span class="input-group-text">Senha:</span>
+                        </div>
+                        <input type="password" class="form-control" placeholder="Digite a Senha."
+                            aria-describedby="inputGroupPrepend" required>
+                            <div class="input-group-prepend">
+                                <label for="senha"></label>
+                                <span class="input-group-text">Confirme a senha:</span>
+                            </div>
+                            <input type="password" class="form-control" placeholder="Confirme sua Senha."
+                                aria-describedby="inputGroupPrepend" required>
+                    </div>
+                </section>
+                <input type="checkbox">Eu quero receber novidades no e-mail cadastrado
+                <section class="row col-12 d-flex justify-content-center">
+                    <button class="btn btn-outline-warning col-2">Enviar</button>
+                </section>
+            
+    </main>
+
+    <footer>
+        <section id="footer_menu">
+            <ul>
+                <li>
+                    <h5 class="text-muted">Sobre nós:</h5>
+                </li>
+                <li><a href="quem_somos.html">Quem Somos</a></li>
+                <li><a href="quem_somos.html#quem-somos" id="click-link">Serviço de Entrega</a></li>
+                <li><a href="quem_somos.html#formas_de_pagamento">Formas de pagamento</a></li>
+
+            </ul>
+            <section>
+                <a href="#"> <img src="imagens/facebook.png" alt="Rede social facebook" class="imgs_footer"></a>
+                <a href="#"><img src="imagens/insta.png" alt="Rede social instagram" class="imgs_footer"></a>
+                <a href="#"><img src="imagens/linkedin.png" alt="Rede social linkedin" class="imgs_footer"></a>
+              </section>
+            <ul>
+                <li>
+                  <h5 class="text-muted">Dúvidas:</h5>
+                </li>
+                <li><a href="quem_somos.html#minha_conta">Minha Conta</a></li>
+                <li><a href="quem_somos.html#meus_pedidos">Meus Pedidos</a></li>
+                <li><a href="#faq">FAQ</a></li>
+              </ul>
+        
+            </section>
+        
+            <section id="copyright">
+              <p>&copy; Desenvolvedor Yago Mathias - 2021 </p>
+            </section>
+          </footer>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <!-- Biblioteca jQuery -->
+
+    <script src="assets/bootstrap-4.6.0-dist/bootstrap-4.6.0-dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Local -->
+    <script src="assets/bootstrap-4.6.0-dist/bootstrap-4.6.0-dist/js/bootstrap.min.js"></script>
+    <script src="assets/jquery/jquery-ui.min.js"></script>
+    <script src="assets/javascript/index.js"></script>
+
+</body>
+
+</html>
