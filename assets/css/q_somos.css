@@ -1,0 +1,28 @@
+#nav-tabContent{
+    background-color: rgb(224, 223, 220);
+    padding: 4vw;
+}
+a:hover{
+    border-left: solid 0.4vw;
+    transition: 0.6s;
+}
+a{
+    margin: 0.1vw;
+    border: none;
+}
+
+.container{
+    background-color: aliceblue;
+}
+
+aside h2{
+    color: rgb(255, 255, 255);
+}
+
+#tabs .nav-tabs .nav-item .show .nav-link, .nav-tabs .nav-link .active {
+    color: #f3f3f3;
+    background-color: transparent;
+    border-color: transparent transparent #f3f3f3;
+    border-bottom: 4px solid;
+    font-weight: bold;
+}

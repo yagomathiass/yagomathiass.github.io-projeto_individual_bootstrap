@@ -1,0 +1,116 @@
+body{
+    background-color: #9A9A9c;
+}
+#primeiro_menu{
+    background-color: rgb(20, 20, 20);
+    color: aliceblue;
+    height: 3vh;
+}
+
+#logo{
+    width: 23vw;
+}
+
+.img_primeiro_menu{
+    width: 10%;
+
+}
+
+#user{
+    width: 2vw;
+}
+
+#opcao_menu{
+    background-color: #73737a81;
+}
+
+h1, h2, h4, h6{
+    font-family: 'Amatic SC', cursive;
+}
+
+h3{
+    font-size: 40px;
+    font-family: 'Amatic SC', cursive;
+    color: rgb(224, 207, 186);
+}
+
+
+hr{
+    height: 0.1vh;
+    background-color: #a07a65;
+}
+
+#scroll {
+    width: 7vw;
+    position: fixed;
+    opacity: 0.8;
+    right: 1vw;
+    bottom: 5vh;
+    z-index: 3;
+}
+
+#scroll:hover {
+    opacity: 1;
+}
+
+span img:hover{
+    transform: scale(1.10);
+    transition-timing-function: ease;
+    transition-duration: 1s;
+
+}
+#mais_vendidas img{
+    width: 15vw;
+}
+.card{
+    box-shadow: 0px 0px 4px 0px;
+}
+
+#sobre_a_empresa{
+    background-color: #142273c5;
+}
+
+#sobre_a_empresa img{
+    width: 10vw;
+
+}
+
+#footer_menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+footer {
+    margin-top: 3vw;
+    background-color: rgb(0, 0, 0);
+    color: azure;
+
+}
+ul li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+} 
+
+.imgs_footer{
+    width: 4vw;
+}
+
+a:hover{
+
+    color: rgb(201, 201, 201);
+}
+
+@media (max-width: 425px) {
+    h2{
+        font-size: 18px;
+
+    }
+    h3{
+        font-size: 16px;
+
+    }
+}

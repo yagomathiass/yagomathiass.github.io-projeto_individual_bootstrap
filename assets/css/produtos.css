@@ -1,0 +1,12 @@
+.card:hover{
+    background-color: rgba(254, 255, 190, 0.842);
+}
+
+.botoes_slide{
+    height: 7vh;
+    width: 3vw;
+}
+
+hr{
+    width: 80%;
+}
